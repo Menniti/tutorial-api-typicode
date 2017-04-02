@@ -1,13 +1,17 @@
 <article class="listing">
 
   <div class="detail type">
-    <span>Title:</span> {{post.title}}
+    {{#link-to 'posts.show' post}}
+    	<span>Title:</span> {{post.title}}
+    {{/link-to}}
   </div>
   <div class="detail type">
     <span>Post:</span> {{post.body}}
   </div>
   <div class="detail userId.name">
-    <span>By: {{post.userId.name}}</span>
+    {{#link-to 'posts.user' post}}
+    	<span>By: {{post.userId.name}}</span>
+  	{{/link-to}}
   </div>
 
 </article>
