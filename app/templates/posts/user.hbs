@@ -1,14 +1,14 @@
 {{outlet}}
 
 {{#each posts as |post|}}
-	<div class="detail body">
+	  <div class="detail body">
     	<span>Title:</span>
     	<span></span>{{post.title}}
   	</div>
   	<div class="detail body">
     	<span>Body:</span>{{post.body}}
   	</div>
-  		<div class="detail title">
-    	<span>By: </span>{{post.userId.name}}
+  	<div class="detail title">
+        <span>By: </span>{{post.userId.name}}
   	</div>
 {{/each}}
