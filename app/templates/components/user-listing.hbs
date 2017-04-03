@@ -1,14 +1,14 @@
 <article class="listing">
 
 	<div class="detail body">
-    	<span>Title:</span>
-    	<span></span>{{post.title}}
+    	<span>Title of post:</span> {{post.title}}
   	</div>
   	<div class="detail body">
-    	<span>Body:</span>{{post.body}}
+    	 <span>Written By: {{post.userId.name}}</span>
   	</div>
   	<div class="detail title">
-        <span>By: </span>{{post.userId.name}}
+        <span>Post description:</span> {{post.body}}
   	</div>
   	
 </article>
+

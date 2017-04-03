@@ -2,17 +2,16 @@
 
   <div class="detail type">
     {{#link-to 'posts.show' post}}
-    	<span>Title:</span> {{post.title}}
+    	<span>Title of post:</span> {{post.title}}
     {{/link-to}}
-  </div>
-  <div class="detail type">
-    <span>Post:</span> {{post.body}}
   </div>
   <div class="detail userId.name">
     {{#link-to 'posts.user' post}}
-    	<span>By: {{post.userId.name}}</span>
+    	<span>Written By: {{post.userId.name}}</span>
   	{{/link-to}}
   </div>
-
+  <div class="detail type">
+    <span>Post description:</span> {{post.body}}
+  </div>
 </article>
 {{yield}}
